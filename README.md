@@ -9,7 +9,13 @@ The filters should be:
 3. `rotate` rotate N degrees. (no need for resizing/cropping)
 4. Optionally, make up your own filter. Not required.
 
-Other requirements:
+### How to use script 
+1. cd to the project folder
+2. Run 'bash env.sh' on command to create virtual environment.
+3. Run 'source .venv/filter/bin/activate'
+4. Run 'python3 -m filter options source_image output_image'
+
+Please keep in mind:
 
 * All parameters should be given in one line. (no interactive approach using `input()`)
 * Each filter should be optional. 
@@ -19,14 +25,3 @@ Other requirements:
 * The number of degrees should be given on the command line.
 * The output file should be given as a filename on the command line. (Support saving as png and jpg)
 * Allow applying a filter more than once. (for example: gray_scale > rotate > overlay > rotate)
-
-### How to use script 
-1. cd to the project folder
-2. Run 'bash env.sh' on command to create virtual environment.
-3. Run 'source .venv/filter/bin/activate'
-4. Run 'python3 -m filter options source_image output_image'
-
-### How to run test 
-1. Run 'bash env.sh' on command to create virtual environment, if virtual environment is not present.
-2. Run 'source .venv/filter/bin/activate'
-3. Run 'pytest test.py'
